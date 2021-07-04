@@ -597,7 +597,7 @@ body {
 }
 
 .products_container .products_slider #slide2 {
-  background: url("/styles/images/products/onion.jpg") no-repeat center center;
+  background: url("https://yash-netankar.github.io/styles/images/products/onion.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
