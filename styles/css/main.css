@@ -595,24 +595,49 @@ body {
   cursor: pointer;
 }
 
-.products_container .products_slider #slide1 {
-  background-color: red;
-}
-
 .products_container .products_slider #slide2 {
-  background-color: rgba(179, 255, 0, 0.952);
+  background: url("/styles/images/products/onion.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .products_container .products_slider #slide3 {
-  background-color: #00ff9d;
+  background: url("/styles/images/products/cotton.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .products_container .products_slider #slide4 {
-  background-color: #6f00ff;
+  background: url("/styles/images/products/groundnut.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .products_container .products_slider #slide5 {
-  background-color: #ff0077;
+  background: url("/styles/images/products/drumstick.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s1:checked ~ #slide1 {
+  background: url("/styles/images/products/banana.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s2:checked ~ #slide2 {
+  background: url("/styles/images/products/onion.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s3:checked ~ #slide3 {
+  background: url("/styles/images/products/cotton.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s4:checked ~ #slide4 {
+  background: url("/styles/images/products/groundnut.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s5:checked ~ #slide5 {
+  background: url("/styles/images/products/drumstick.jpg") no-repeat center center;
+  background-size: 100% 100%;
 }
 
 .products_container .products_slider #s1:checked ~ #slide1,
@@ -668,5 +693,94 @@ body {
           transform: translate3d(-15%, 0, -90px);
   -webkit-box-shadow: 0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+#footer {
+  width: 100%;
+  background: #ecf0f1;
+  margin-top: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer .contact_div {
+  width: 100%;
+  padding: 4rem 2rem 4rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#footer .contact_div section {
+  font-size: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+#footer .contact_div section h3 {
+  font-size: 1.5rem;
+}
+
+#footer .contact_div .social div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .contact_div .social div a {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+
+#footer p {
+  width: 100%;
+  font-size: 1.4rem;
+  background-color: #2c3e50;
+  color: #fff;
+  word-spacing: 2px;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

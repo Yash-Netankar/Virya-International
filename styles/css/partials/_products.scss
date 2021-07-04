@@ -60,30 +60,56 @@ $box:0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
             transition: .4s ease-in-out;
             cursor: pointer;
         }
-        #slide1{
-            background-color: red;
-        }
+
+        // setting images to the labels behind so user can see
         #slide2{
-            background-color: rgba(179, 255, 0, 0.952);
+            background: url('/styles/images/products/onion.jpg') no-repeat center center;
+            background-size: 100% 100%;
         }
         #slide3{
-            background-color: rgb(0, 255, 157);
+            background: url('/styles/images/products/cotton.jpg') no-repeat center center;
+            background-size: 100% 100%;
         }
         #slide4{
-            background-color: rgb(111, 0, 255);
+            background: url('/styles/images/products/groundnut.jpg') no-repeat center center;
+            background-size: 100% 100%;
         }
         #slide5{
-            background-color: rgb(255, 0, 119);
+            background: url('/styles/images/products/drumstick.jpg') no-repeat center center;
+            background-size: 100% 100%;
         }
 
         // slider functionality
-        // for 1st slide
+        // for images
+        #s1:checked ~ #slide1{
+            background: url('/styles/images/products/banana.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+        #s2:checked ~ #slide2{
+            background: url('/styles/images/products/onion.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+        #s3:checked ~ #slide3{
+            background: url('/styles/images/products/cotton.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+        #s4:checked ~ #slide4{
+            background: url('/styles/images/products/groundnut.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+        #s5:checked ~ #slide5{
+            background: url('/styles/images/products/drumstick.jpg') no-repeat center center;
+            background-size: 100% 100%;
+        }
+
+
+        // for sliding
         #s1:checked ~ #slide1,
         #s2:checked ~ #slide2,
         #s3:checked ~ #slide3,
         #s4:checked ~ #slide4,
         #s5:checked ~ #slide5{
-            @include slider(0%, 0, 0px)
+            @include slider(0%, 0, 0px);
         }
 
         #s1:checked ~ #slide2,

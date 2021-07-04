@@ -1,0 +1,40 @@
+@import "./flex";
+
+#footer{
+    width: 100%;
+    background: #ecf0f1;
+    margin-top: 2rem;
+    @include flex(column, center, center);
+    .contact_div{
+        width: 100%;
+        padding: 4rem 2rem 4rem 2rem;
+        @include flex(row, space-around, baseline);
+        section{
+            h3{
+                font-size: 1.5rem;
+            }
+            font-size: 1rem;
+            @include flex(column, space-around, baseline);
+        }
+        .social{
+            div{
+                width: 100%;
+                @include flex(row, center, center);
+                flex-wrap: wrap;
+                a{
+                    margin-right: 1rem;
+                    font-size: 1.5rem;
+                }
+            }
+            
+        }
+    }
+    p{
+        width: 100%;
+        font-size: 1.4rem;
+        background-color: #2c3e50;
+        color: #fff;
+        word-spacing: 2px;
+        text-align: center;
+    }
+}
