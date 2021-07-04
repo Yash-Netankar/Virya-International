@@ -63,7 +63,7 @@ $box:0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
 
         // setting images to the labels behind so user can see
         #slide2{
-            background: url('styles/images/products/drumstick.jpg') no-repeat center center;
+            background: url('https://yash-netankar.github.io/styles/images/products/banana.jpg') no-repeat center center;
             background-size: 100% 100%;
         }
         #slide3{
@@ -82,7 +82,7 @@ $box:0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
         // slider functionality
         // for images
         #s1:checked ~ #slide1{
-            background: url('./styles/images/products/banana.jpg') no-repeat center center;
+            background: url('https://yash-netankar.github.io/styles/images/products/banana.jpg') no-repeat center center;
             background-size: 100% 100%;
         }
         #s2:checked ~ #slide2{
