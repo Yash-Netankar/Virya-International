@@ -7,13 +7,11 @@
 
 body {
   font-size: 62.5%;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
 .my_container {
   width: 100%;
-  overflow-x: hidden;
 }
 
 #carouselExampleCaptions .carousel-inner {
@@ -78,7 +76,7 @@ body {
 
 .my_navbar {
   width: 100%;
-  border: 2px solid black;
+  border-bottom: 2px solid black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -194,6 +192,7 @@ body {
           box-shadow: 10px 5px 10px 20px black;
   -webkit-transform: translateX(120%);
           transform: translateX(120%);
+  display: none;
   -webkit-transition: -webkit-transform .3s;
   transition: -webkit-transform .3s;
   transition: transform .3s;
@@ -343,6 +342,7 @@ body {
 }
 
 #my_sidebar.show {
+  display: block;
   -webkit-transform: translateX(0%);
           transform: translateX(0%);
 }
@@ -776,6 +776,30 @@ body {
   font-size: 1.5rem;
 }
 
+#footer .contact_div .personal div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#footer .contact_div .personal div a {
+  margin-right: 1rem;
+  font-size: 1.1rem;
+}
+
 #footer p {
   width: 100%;
   padding: .3rem;
@@ -786,5 +810,53 @@ body {
   word-spacing: 4px;
   letter-spacing: 1px;
   text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  #footer .contact_div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: none;
+        -ms-flex-pack: none;
+            justify-content: none;
+    -webkit-box-align: none;
+        -ms-flex-align: none;
+            align-items: none;
+  }
+  #footer .contact_div section {
+    width: 100%;
+    margin-top: 1rem;
+  }
+  #footer .contact_div section h3 {
+    width: 100%;
+    text-align: center;
+  }
+  #footer .contact_div .personal div {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #footer .contact_div .personal div a {
+    margin-right: 1rem;
+    font-size: 1.1rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */

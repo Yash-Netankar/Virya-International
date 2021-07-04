@@ -4,7 +4,7 @@
     width: 100%;
     // background-color: #14a751;
     // box-shadow: 0 0 5px 5px #0000004d;
-    border: 2px solid black;
+    border-bottom: 2px solid black;
     @include flex(row, space-around, center);
     .links_div{
         .my_link{

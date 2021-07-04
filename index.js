@@ -7,9 +7,11 @@ const slidebar_close_btn = document.querySelector(".sidebar_close_btn");
 window.addEventListener("scroll", () => {
     if (window.scrollY >= 15) {
         navbar.classList.add("sticky");
+        hamburger.style.color = "#fff";
     }
     else {
         navbar.classList.remove("sticky");
+        hamburger.style.color = "#000";
     }
 });
 

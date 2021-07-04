@@ -28,6 +28,17 @@
             }
             
         }
+        .personal{
+            div{
+                width: 100%;
+                @include flex(column, center, baseline);
+                flex-wrap: wrap;
+                a{
+                    margin-right: 1rem;
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
     p{
         width: 100%;
@@ -39,5 +50,32 @@
         word-spacing: 4px;
         letter-spacing: 1px;
         text-align: center;
+    }
+}
+
+@media screen and(max-width:480px){
+    #footer{
+        .contact_div{
+            @include flex(column, none, none);
+            section{
+                width: 100%;
+                margin-top: 1rem;
+                h3{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+            .personal{
+                div{
+                    width: 100%;
+                    @include flex(column, baseline, baseline);
+                    flex-wrap: wrap;
+                    a{
+                        margin-right: 1rem;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+        }
     }
 }
