@@ -607,7 +607,7 @@ body {
 }
 
 .products_container .products_slider #slide4 {
-  background: url("/styles/images/products/groundnut.jpg") no-repeat center center;
+  background: url("../../images/products/drumstick.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
@@ -627,12 +627,12 @@ body {
 }
 
 .products_container .products_slider #s3:checked ~ #slide3 {
-  background: url("/styles/images/products/cotton.jpg") no-repeat center center;
+  background: url("./styles/images/products/cotton.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #s4:checked ~ #slide4 {
-  background: url("/styles/images/products/groundnut.jpg") no-repeat center center;
+  background: url("../../images/products/drumstick.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
