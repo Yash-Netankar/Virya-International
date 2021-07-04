@@ -67,7 +67,7 @@ $box:0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
             background-size: 100% 100%;
         }
         #slide3{
-            background: url('./styles/images/products/cotton.jpg') no-repeat center center;
+            background: url('/styles/images/products/cotton.jpg') no-repeat center center;
             background-size: 100% 100%;
         }
         #slide4{
@@ -86,7 +86,7 @@ $box:0 13px 26px rgba(0, 0, 0, 0.337), 0 6px 12px rgba(0, 0, 0, 0.25);
             background-size: 100% 100%;
         }
         #s2:checked ~ #slide2{
-            background: url('./styles/images/products/onion.jpg') no-repeat center center;
+            background: url('styles/images/products/onion.jpg') no-repeat center center;
             background-size: 100% 100%;
         }
         #s3:checked ~ #slide3{
