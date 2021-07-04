@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- original css/sass -->
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <!-- title -->
+    <title>Virya International</title>
+</head>
+
+<body>
+    <!-- main container/wrapper -->
+    <div class="my_container">
+
+        <!--********** navbar *************-->
+        <nav class="my_navbar shadow p-1 rounded">
+            <h1 class="logo">VIRYA LOGO</h1>
+            <!-- links -->
+            <div class="links_div">
+                <a href="#" class="my_link">Home</a>
+                <a href="#" class="my_link">About Us</a>
+                <a href="#" class="my_link">Our-Products</a>
+                <a href="#" class="my_link">Contact</a>
+            </div>
+            <!-- social links to connect-->
+            <div class="social_links">
+                <a href="#" class="my_link_email my_link_social">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="my_link_linkedIn my_link_social">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="my_link_insta my_link_social">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+            <!-- hamburger icon -->
+            <div id="my_hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+        <!--********** navbar end**********-->
+
+
+        <!-- sidebar -->
+        <section id="my_sidebar">
+            <div class="sidebar_logo_div">
+                <h1 class="logo">
+                    Virya Logo
+                </h1>
+                <button class="sidebar_close_btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="sidebar_body">
+                <ul class="sidebar_links_list">
+                    <li class="sidebar_link">
+                        <i class="fas fa-home"></i>
+                        <a href="#" class="my_link">Home</a>
+                    </li>
+                    <li class="sidebar_link">
+                        <i class="fas fa-users"></i>
+                        <a href="#" class="my_link">About Us</a>
+                    </li>
+                    <li class="sidebar_link">
+                        <i class="fab fa-product-hunt"></i>
+                        <a href="#" class="my_link">Our Products</a>
+                    </li>
+                    <li class="sidebar_link">
+                        <i class="fas fa-address-book"></i>
+                        <a href="#" class="my_link">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social_links">
+                <a href="#" class="my_link_email my_link_social">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="#" class="my_link_linkedIn my_link_social">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="my_link_insta my_link_social">
+                    <i class="fab fa-instagram-square"></i>
+                </a>
+            </div>
+        </section>
+        <!-- sidebar end -->
+
+
+        <!-- *********Slider With captions/indicators****** -->
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./styles/images/slider1.jpg" class="d-block w-100" alt="nuts">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./styles/images/slider2.jpg" class="d-block w-100" alt="vegetables">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./styles/images/slider3.jpg" class="image d-block w-100" alt="fruits">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!--******************Slider End****************-->
+
+
+        <!-- *********About us****** -->
+        <section class="about_us_container">
+            <h1>Welcome To Virya International</h1>
+            <p class="about_text">
+                We Virya International are into supplying and exporting of agricultural products as well as fresh
+                fruits, vegetables, rice, grains, ground-nut and onion etc.
+                We are based in Maharashtra pune. Our network of high-quality and reputed vendors ensures that you get
+                the best deal always.
+                Moreover always strieved to precure best quality products and other peompt services
+                across globe, Similiarly our company gives high intergrate focus to create value for the benefit of the
+                clients.
+            </p>
+            <p class="about_text">
+
+            </p>
+        </section>
+        <!-- *********About us- END****** -->
+
+
+        <!-- *********Why Choose Us****** -->
+        <div class="chooose_us_container">
+            <h1 class="heading">
+                Why Chooose Us
+            </h1>
+            <div class="choose_us_body">
+                <section class="choose_us_card">
+                    <i aria-hidden="true" class="fas fa-clipboard-check"></i>
+                    <h3 class="title">Quality</h3>
+                    <p>We Ensure that our clients to have best quality of the products.</p>
+                </section>
+                <section class="choose_us_card">
+                    <i aria-hidden="true" class="fas fa-handshake"></i>
+                    <h3 class="title">Trust</h3>
+                    <p>We Offer competitive and negligible price.</p>
+                </section>
+                <section class="choose_us_card">
+                    <i aria-hidden="true" class="fas fa-file-invoice-dollar"></i>
+                    <h3 class="title">Price</h3>
+                    <p>We are known for our genuine and excellent service.</p>
+                </section>
+                <section class="choose_us_card">
+                    <i aria-hidden="true" class="fas fa-box"></i>
+                    <h3 class="title">Packaging</h3>
+                    <p>Our packaging is as per the requirement of the client carried out in APEDA approved pack houses.
+                    </p>
+                </section>
+            </div>
+        </div>
+        <!-- *********Why Choose Us- END****** -->
+    </div>
+
+
+    <!-- *********Products****** -->
+    <div class="products_container">
+        <section class="content">
+            <h1>Our Products</h1>
+            <p>We value our clients and that's why we deliver the high quality products.</p>
+        </section>
+        <section class="products_slider">
+
+            <input type="radio" name="slider" id="s1" checked>
+            <input type="radio" name="slider" id="s2">
+            <input type="radio" name="slider" id="s3">
+            <input type="radio" name="slider" id="s4">
+            <input type="radio" name="slider" id="s5">
+
+            <label for="s1" id="slide1">
+
+            </label>
+            <label for="s2" id="slide2">
+
+            </label>
+            <label for="s3" id="slide3">
+
+            </label>
+            <label for="s4" id="slide4">
+
+            </label>
+            <label for="s5" id="slide5">
+
+            </label>
+        </section>
+    </div>
+    <!-- *********Products- END****** -->
+
+</body>
+
+
+
+
+
+
+
+
+<!-- scripts -->
+<script src="./index.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>

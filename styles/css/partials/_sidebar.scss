@@ -1,0 +1,109 @@
+@import "./_flex.scss";
+#my_sidebar{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 96vh;
+    background: rgba(0, 0, 0, 0.973);
+    box-shadow: 10px 5px 10px 20px black;
+    transform: translateX(120%);
+    transition: transform .3s;
+    z-index: 11;
+    .sidebar_logo_div{
+        padding: .2rem;
+        border-bottom: 2px solid whitesmoke;
+        width: 100%;
+        @include flex(row, space-between, center);
+        .logo{
+            font-size: 2rem;
+            color: white;
+
+        }
+        .sidebar_close_btn{
+            background: none;
+            outline: none;
+            border: none;
+            padding: .5rem;
+            font-size: 1.5rem;
+            color: whitesmoke;
+            transition: transform .3s;
+            &:hover{
+                transform: rotate(90deg);
+            }
+        }
+    }
+    .sidebar_body{
+        width: 100%;
+        @include flex(column, center, center);
+        .sidebar_links_list{
+            margin: 0 auto;
+            padding: 2rem .5rem;
+        }
+        .sidebar_link{
+            list-style: none;
+            font-size: 1rem;
+            font-family: "Poppins";
+            word-spacing: 2px;
+            margin-bottom: 2rem;
+            cursor: pointer;
+            transition: transform .3s;
+            &:hover{
+                transform: translateX(10px);
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: white;
+                transition: width .3s;
+            }
+            &:hover::before{
+                width: 100%;
+            }
+            a{
+                color: whitesmoke;
+                font-weight: 600;
+                letter-spacing: 1px;
+                text-decoration: none;
+                margin-right: .5rem;
+            }
+            i{
+                color: white;
+                margin-left: .5rem;
+            }
+        }
+    }
+    .social_links{
+        width: 100%;
+        @include flex(row, space-around, center);
+        a{
+            font-size: 1.4rem;
+            color: white;
+            transition: transform .3s;
+            &:hover{
+                transform: scale(1.1);
+            }
+            
+        }
+    }
+}
+
+#my_sidebar.show{
+    transform: translateX(0%);
+}
+
+// media
+@media screen and (max-width:700px){
+    #my_sidebar{
+        width: 50vw;
+    }
+}
+@media screen and (max-width:500px){
+    #my_sidebar{
+        width: 80vw;
+    }
+}

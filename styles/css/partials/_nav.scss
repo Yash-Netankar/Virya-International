@@ -1,0 +1,96 @@
+@import "./_flex.scss";
+
+.my_navbar{
+    width: 100%;
+    // background-color: #14a751;
+    // box-shadow: 0 0 5px 5px #0000004d;
+    border: 2px solid black;
+    @include flex(row, space-around, center);
+    .links_div{
+        .my_link{
+            color: black;
+            font-size: 1rem;
+            margin-left: 1rem;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: "Poppins";
+            position: relative;
+            text-shadow: 1px 1px 3px white;
+            // hover effects
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -3px;
+                left: 0;
+                width: 0%;
+                height: 2px;
+                background-color: #14a751;
+                transition: width .3s;
+            }
+            &:hover::before{
+                width: 99%;
+            }
+        }
+    }
+    .social_links{
+        .my_link_social{
+            font-size: 1.3rem;
+            margin-left: 1rem;
+            color:black;
+            text-decoration: none;
+        }
+        // .my_link_email{
+        //     color: red;
+        // }
+        // .my_link_linkedIn{
+        //     color: royalblue;
+        // }
+        // .my_link_insta{
+
+        // }
+    }
+    #my_hamburger{
+        font-size: 1.5rem;
+        display: none;
+    }
+}
+
+// sticky navbar class when scrolled
+.my_navbar.sticky{
+    .logo{
+        color: white;
+    }
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.671);
+    .links_div{
+        .my_link{
+            color:white;
+            text-shadow: 1px 1px 3px black;
+            &::before{
+                background: #14a751;
+            }
+        }
+    }
+    .social_links{
+        .my_link_social{
+            color: white;
+        }
+    }
+}
+
+// media query
+@media screen and (max-width:780px){
+    .my_navbar{
+        @include flex(row, space-between, center);
+    }
+    .my_navbar .links_div,
+    .my_navbar .social_links{
+         display: none;
+    }
+    .my_navbar #my_hamburger{
+        display: block;
+    }
+}

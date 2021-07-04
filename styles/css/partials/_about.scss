@@ -1,0 +1,34 @@
+.about_us_container{
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem .5rem;
+    h1{
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+        font-family: "Poppins";
+    }
+    .about_text{
+        margin:  0 auto;
+        width: 80%;
+        font-size: .9rem;
+        text-align: justify;
+        padding: .5rem;
+        line-height: 1.5rem;
+    }
+}
+
+@media screen and(max-width:550px){
+    .about_us_container h1{
+        font-size: 1.3rem;
+    }
+    .about_us_container .about_text{
+        font-size: .8rem;
+    }
+}
+
+@media screen and(max-width:700px){
+    .about_us_container .about_text{
+        width: 90%;
+    }
+}
