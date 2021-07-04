@@ -597,12 +597,12 @@ body {
 }
 
 .products_container .products_slider #slide2 {
-  background: url("https://yash-netankar.github.io/styles/images/products/onion.jpg") no-repeat center center;
+  background: url("https://yash-netankar.github.io/images/products/onion.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #slide3 {
-  background: url("./styles/images/products/cotton.jpg") no-repeat center center;
+  background: url("./images/products/cotton.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
@@ -622,22 +622,22 @@ body {
 }
 
 .products_container .products_slider #s2:checked ~ #slide2 {
-  background: url("./styles/images/products/onion.jpg") no-repeat center center;
+  background: url("https://yash-netankar.github.io/images/products/onion.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #s3:checked ~ #slide3 {
-  background: url("./styles/images/products/cotton.jpg") no-repeat center center;
+  background: url("./images/products/cotton.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #s4:checked ~ #slide4 {
-  background: url("../../images/products/drumstick.jpg") no-repeat center center;
+  background: url("/images/products/drumstick.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #s5:checked ~ #slide5 {
-  background: url("/styles/images/products/drumstick.jpg") no-repeat center center;
+  background: url("images/products/drumstick.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
