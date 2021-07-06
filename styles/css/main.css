@@ -627,7 +627,7 @@ body {
 }
 
 .products_container .products_slider #s3:checked ~ #slide3 {
-  background: url("../../9.11.jfif") no-repeat center center;
+  background: url("../../../img.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
