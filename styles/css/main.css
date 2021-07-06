@@ -602,12 +602,12 @@ body {
 }
 
 .products_container .products_slider #slide3 {
-  background: url("./images/products/cotton.jpg") no-repeat center center;
+  background: url("./img.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
 .products_container .products_slider #slide4 {
-  background: url("../../images/products/drumstick.jpg") no-repeat center center;
+  background: url("../../../img.jpg") no-repeat center center;
   background-size: 100% 100%;
 }
 
