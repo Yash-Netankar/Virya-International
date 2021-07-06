@@ -569,6 +569,7 @@ body {
 .products_container .products_slider .product_slide img {
   width: 100%;
   height: 100%;
+<<<<<<< HEAD
 }
 
 .products_container .products_slider .product_slide .caption {
@@ -602,6 +603,56 @@ body {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+=======
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+  cursor: pointer;
+}
+
+.products_container .products_slider #slide2 {
+  background: url("https://yash-netankar.github.io/img.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #slide3 {
+  background: url("https://yash-netankar.github.io/../../../../img.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #slide4 {
+  background: url("../../../../img.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #slide5 {
+  background: url("/img.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s1:checked ~ #slide1 {
+  background: url("https://yash-netankar.github.io/styles/images/products/banana.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s2:checked ~ #slide2 {
+  background: url("https://yash-netankar.github.io/images/products/onion.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s3:checked ~ #slide3 {
+  background: url("") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s4:checked ~ #slide4 {
+  background: url("/images/products/drumstick.jpg") no-repeat center center;
+  background-size: 100% 100%;
+}
+
+.products_container .products_slider #s5:checked ~ #slide5 {
+  background: url("images/products/drumstick.jpg") no-repeat center center;
+  background-size: 100% 100%;
+>>>>>>> 3b0b6cb7101b0bad6a862842e4dc3c0737395d68
 }
 
 .products_container .products_slider .arrow:hover {
