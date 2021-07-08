@@ -67,5 +67,5 @@ unique_categories.map(category => {
     })}
     </div>
     </div>`
-    products_section.insertAdjacentHTML("beforeend", str);
+    products_section.insertAdjacentHTML("beforeend", str.replace(/\s+/g, ''));
 })
