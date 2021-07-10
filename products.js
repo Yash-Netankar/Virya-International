@@ -21,7 +21,7 @@ const data = [
     },
     {
         cat: "Vegetables",
-        product: "whiteonion",
+        product: "white onion",
     },
     {
         cat: "Grains",
@@ -29,11 +29,11 @@ const data = [
     },
     {
         cat: "Grains",
-        product: "basmatirice",
+        product: "basmati rice",
     },
     {
         cat: "Grains",
-        product: "nonbasmatirice",
+        product: "non basmati rice",
     },
     {
         cat: "Others",
@@ -58,9 +58,11 @@ unique_categories.map(category => {
     <div class="all_products">
     ${data.map(product => {
         if (product.cat === category) {
+            // doing below stuff so that i'll get names of product under img properly not exactly as img names. so now to image work i've to remove the spaces between names as defined in data array
+            let joinImageName = product.product.replace(/[\s+]/g, "");
             return (`
                 <div class='product_card'>
-                <img class='product_img' src=${imgaddr + product.product + '.jpg'} alt=${product.product}>
+                <img class='product_img' src=${imgaddr + joinImageName + '.jpg'} alt=${joinImageName}>
                 <span class='name'>${product.product.toUpperCase()}</span>
                 </div>`
             )
@@ -71,11 +73,25 @@ unique_categories.map(category => {
     products_section.insertAdjacentHTML("beforeend", str.replace(replace_trailing_commas, ""));
 });
 
-const product_images = document.querySelectorAll(".product_img");
 
-// logic for product image to apply when click\
-product_images.forEach(img => {
-    img.addEventListener("click", (e) => {
-        product_cont.style.backgroundImage = `url(${img.src})`;
+
+// logic to apply product image to bg when click on img
+const product_images = document.querySelectorAll(".product_img");
+const applyProductImagesToBG = () => {
+    product_images.forEach(img => {
+        img.addEventListener("click", (e) => {
+            product_cont.style.backgroundImage = `url(${img.src})`;
+        })
     })
-})
+}
+
+//by default apply a image to background
+product_cont.style.backgroundImage = 'url("./styles/images/products/banana.jpg")';
+
+applyProductImagesToBG();
+
+// run it again if images are not loaded
+const applyEvent = setTimeout(() => {
+    applyProductImagesToBG();
+    clearTimeout(applyEvent);
+}, 5000);
