@@ -23,6 +23,10 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     -moz-backdrop-filter:blur(10px);
+    background: rgba(255, 255, 255, 0.39);
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-radius: 5px;
 }
 .products_section::-webkit-scrollbar{
     display: none;
@@ -72,7 +76,7 @@
 .product_card img:hover{
     box-shadow: 0 2px 10px 3px #0000006c;
 }
-.product_card img:hover ~ .name{
+.product_card:hover .name{
     background: black;
 }
 .product_card .name{
