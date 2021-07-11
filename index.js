@@ -1,10 +1,19 @@
 const navbar = document.querySelector(".my_navbar");
 const hamburger = document.getElementById("my_hamburger");
 const sidebar = document.getElementById("my_sidebar");
+const my_link = document.querySelectorAll(".my_link");
 const slidebar_close_btn = document.querySelector(".sidebar_close_btn");
 const products_slider = document.querySelectorAll(".product_slide");
 const prev = document.querySelector(".prev");
 const next = document.querySelector(".next");
+
+
+// keeping sidebar on top
+window.addEventListener("scroll", () => {
+    let screenTop = window.scrollY;
+    sidebar.style.top = screenTop + "px";
+});
+
 
 // making navbar sticky when page is scrolled
 window.addEventListener("scroll", () => {
@@ -18,6 +27,13 @@ window.addEventListener("scroll", () => {
     }
 });
 
+
+// close sidebar when click on sidebar menu
+my_link.forEach(link => {
+    link.addEventListener("click", () => {
+        sidebar.classList.remove("show");
+    })
+});
 
 
 // toggling of sidebar functionality

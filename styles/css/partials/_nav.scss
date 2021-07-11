@@ -6,6 +6,7 @@
     // box-shadow: 0 0 5px 5px #0000004d;
     border-bottom: 2px solid black;
     @include flex(row, space-around, center);
+    z-index: 100;
     .links_div{
         .my_link{
             color: black;
@@ -59,6 +60,7 @@
 .my_navbar.sticky{
     .logo{
         color: white;
+        font-size: 1.5rem;
     }
     position: sticky;
     top: 0;

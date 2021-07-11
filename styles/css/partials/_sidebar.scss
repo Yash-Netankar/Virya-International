@@ -1,7 +1,7 @@
 @import "./_flex.scss";
 #my_sidebar{
     position: absolute;
-    top: 0;
+    top: 0px;
     right: 0;
     width: 30vw;
     height: 96vh;
@@ -10,14 +10,14 @@
     transform: translateX(120%);
     display: none;
     transition: transform .3s;
-    z-index: 11;
+    z-index: 10;
     .sidebar_logo_div{
         padding: .2rem;
         border-bottom: 2px solid whitesmoke;
         width: 100%;
         @include flex(row, space-between, center);
         .logo{
-            font-size: 2rem;
+            font-size: 1.5rem;
             color: white;
 
         }
